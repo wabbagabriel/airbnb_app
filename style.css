@@ -7,6 +7,10 @@
 header {
   border-bottom: 2px solid #ccc;
   padding-block: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
 }
 
 .genLayout {
@@ -125,17 +129,57 @@ nav {
   cursor: pointer;
 }
 
-.flex_card {
+.liveWrapper {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
-.card > p {
-  font-weight: bold;
-  margin-block: 10px;
+.secOne {
+  padding-top: 7rem;
+}
+/* styling Pastexperience */
+
+.pastExpWrapper {
+  margin-block: 2rem;
 }
 
-.card > img {
-  width: 200px;
-  cursor: pointer;
+.pastExpWrapper > h1 {
+  font-size: 1.5rem;
+  margin-block: 1rem;
+}
+
+.pastExpGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pastExpCard {
+  border-radius: 8px;
+  height: 45vh;
+}
+
+.imgCont {
+  /* border-radius: 8px; */
+  height: 35vh;
+  position: relative;
+}
+
+.imgCont > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.imgCont > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0.3rem;
+  right: 0.4rem;
 }
