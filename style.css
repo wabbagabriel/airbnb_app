@@ -129,13 +129,17 @@ nav {
   cursor: pointer;
 }
 
+.icon :hover {
+  border-bottom: 2px solid black;
+}
+
 .liveWrapper {
   display: flex;
   gap: 16px;
 }
 
 .secOne {
-  padding-top: 7rem;
+  padding-top: 12rem;
 }
 /* styling Pastexperience */
 
